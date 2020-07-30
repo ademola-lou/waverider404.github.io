@@ -89,7 +89,7 @@ body {
     text-align:center;
     font-size:25px;
     transform:rotate(-90deg);
-    background:transparent;
+    background:rgba(255,50,50,0.9);/*transparent;*/
     color:#fff;
     position:fixed;
     left:0;
@@ -101,6 +101,7 @@ body {
     transition:0.4s ease-in-out;
     border-radius:0px 0px 100px 100px;
 }
+
 #work {
     width:10vw;
     height:10vw;
