@@ -1,37 +1,37 @@
-Welcome to Glitch
-=================
+## Welcome to GitHub Pages
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+You can use the [editor on GitHub](https://github.com/Adenekan-Ademola/Adenekan-Ademola.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-Find out more [about Glitch](https://glitch.com/about).
+### Markdown
 
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-Your Project
-------------
+```markdown
+Syntax highlighted code block
 
-### ← README.md
+# Header 1
+## Header 2
+### Header 3
 
-That's this file, where you can tell people what your cool website does and how you built it.
+- Bulleted
+- List
 
-### ← index.html
+1. Numbered
+2. List
 
-Where you'll write the content of your website. 
+**Bold** and _Italic_ and `Code` text
 
-### ← style.css
+[Link](url) and ![Image](src)
+```
 
-CSS files add styling rules to your content.
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### ← script.js
+### Jekyll Themes
 
-If you're feeling fancy you can add interactivity to your site with JavaScript.
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Adenekan-Ademola/Adenekan-Ademola.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### ← assets
+### Support or Contact
 
-Drag in `assets`, like images or music, to add them to your project
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
