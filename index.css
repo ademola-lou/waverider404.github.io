@@ -100,6 +100,7 @@ body {
     z-index:4;
     transition:0.4s ease-in-out;
     border-radius:0px 0px 100px 100px;
+  
 }
 
 #work {
@@ -107,11 +108,12 @@ body {
     height:10vw;
     text-align:center;
     font-size:25px;
-    transform:rotate(90deg);
-    background:transparent;
+    transform:rotate(-90deg);
+    background:rgba(255,50,50,0.9);
     color:#fff;
     position:fixed;
-    right:0;
+    left:0;
+    top: 100px;
     bottom:40vh;
     display:flex;
     flex-direction: column;
@@ -139,6 +141,9 @@ body {
 }
 #about:hover {
     background:rgba(255,50,50,0.9);
+  
+    transform: scale(20, 20);
+  transform:rotate(-90deg);
     cursor:pointer;
 }
 #work:hover {
