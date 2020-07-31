@@ -200,7 +200,7 @@ body {
     cursor:pointer;
 }
 #contact:hover {
-    background:rgba(255,50,50,0.3);
+    background:rgba(50,50, 250,0.3);
     width: 150px;
     cursor:pointer;
 }
