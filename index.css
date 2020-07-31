@@ -211,7 +211,7 @@ body {
 #middle table tr td {
     text-align:center;
 }
-.thumbnails{
+/*.thumbnails{
   background: linear-gradient(0deg,rgba(100,10,10,0.1),rgba(50,50,50,0.1)),url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfile.JPG?v=1596161194187")center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,11 +227,30 @@ body {
 }
 .transbox {
  opacity: .4 
+}*/
+
+.thumbnails {
+  position: relative;
+
+  width: 400px; 
+  height: 400px;  
+  z-index: 1;
+   text-align: center;
+  line-height: 400px;
+  color: black
 }
-.thumbnails strong{
-  /*color: black;
-  z-index: 10;
-  opacity: 1;*/
+
+.thumbnails:before {
+  content: " ";
+  position: absolute;
+  width: 400px; 
+  height: 400px;  
+ 
+  opacity: .4; 
+  z-index: -1;
+  background: url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfile.JPG?v=1596161194187")center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .thumbnails:hover{
