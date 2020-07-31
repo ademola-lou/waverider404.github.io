@@ -159,11 +159,12 @@ body {
   position: fixed;
   right: 0px;
   background: url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfile.JPG?v=1596161194187")center center;
-  background-size: 120px
+  background-size: 120px;
+  z-index:9;
 }
 
 #profile:hover {
-  background-color: red;
+  opacity: .7;
   cursor:pointer;
 }
 
@@ -188,7 +189,7 @@ body {
 
 
 #about:hover {
-    background:rgba(255,50,50,0.3);
+    background:rgba(255, 250, 50,0.3);
     width: 150px;
     cursor:pointer;
 }
