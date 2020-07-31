@@ -213,13 +213,21 @@ body {
 }
 .thumbnails{
   background: url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfile.JPG?v=1596161194187")center center;
-  background-size: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 400px;
   height: 400px;
   text-align: center;
   line-height: 400px;
-  color: blue;
+  opacity: .4;
+  zoom: 1;
+  color: black;
+  z-index: 9;
   
+}
+
+.thumbnails:hover{
+  zoom: 1.2;
 }
 
 .social {
@@ -258,7 +266,8 @@ body {
     margin:8vh 0px;
 }
 #used div{
-    font-size:14px !important;
+  font-family: Impact, Charcoal, sans-serif;
+    font-size:30px !important;
     display:inline-block;
     padding:8px 10px;
     border:2px solid #fff;
