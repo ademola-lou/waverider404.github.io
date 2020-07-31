@@ -211,8 +211,8 @@ body {
 #middle table tr td {
     text-align:center;
 }
-/*.thumbnails{
-  background: linear-gradient(0deg,rgba(100,10,10,0.1),rgba(50,50,50,0.1)),url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfile.JPG?v=1596161194187")center center;
+.thumbnails{
+  background: linear-gradient(0deg,rgba(100,10,10,0.1),rgba(50,50,50,0.1)),url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfiled.JPG?v=1596161194187")center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
@@ -227,9 +227,9 @@ body {
 }
 .transbox {
  opacity: .4 
-}*/
+}
 
-.thumbnails {
+/* .thumbnails {
   position: relative;
 
   width: 400px; 
@@ -247,19 +247,14 @@ body {
   width: 600px; 
   height: 600px;  
   left: 0;
-    top: 0;
+  top: 0;
   opacity: .4; 
   z-index: -1;
-  background: url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfile.JPG?v=1596161194187");
-   background-repeat: no-repeat;
-   
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
+  background: url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2F3d-shapes-vector-pack.jpg?v=1596168081888");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+ */
 .thumbnails:hover{
   zoom: 1.2;
 }
