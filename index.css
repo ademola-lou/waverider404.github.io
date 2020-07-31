@@ -211,6 +211,12 @@ body {
 #middle table tr td {
     text-align:center;
 }
+.thumbnails{
+  background: url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfile.JPG?v=1596161194187")center center;
+  background-size: 120px;
+  width: 100px;
+  : 100px;
+}
 .social {
     color:#fff;
     font-size:22px;
