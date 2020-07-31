@@ -1,5 +1,3 @@
-document.styleSheets[0].addRule('p:before', 'content: attr(data-before);');
-
 function showabout(){
     $("#about_container").css("display","inherit");
     $("#about_container").addClass("animated slideInLeft");

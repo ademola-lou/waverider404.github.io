@@ -219,7 +219,8 @@ body {
   height: 400px;
   text-align: center;
   line-height: 400px;
-  opacity: 1;
+  opacity: .4;
+  overflow: hidden;
   zoom: 1;
   color: black;
   z-index: 9;
