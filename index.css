@@ -237,20 +237,27 @@ body {
   z-index: 1;
    text-align: center;
   line-height: 400px;
-  color: black
+  color: black;
+  overflow: hidden;
 }
 
 .thumbnails:before {
   content: " ";
   position: absolute;
-  width: 400px; 
-  height: 400px;  
- 
+  width: 600px; 
+  height: 600px;  
+  left: 0;
+    top: 0;
   opacity: .4; 
   z-index: -1;
-  background: url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfile.JPG?v=1596161194187")center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfile.JPG?v=1596161194187");
+   background-repeat: no-repeat;
+   
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .thumbnails:hover{
