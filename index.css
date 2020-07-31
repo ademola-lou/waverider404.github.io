@@ -221,9 +221,14 @@ body {
   line-height: 400px;
   opacity: .4;
   zoom: 1;
-  color: black;
+  color: b
   z-index: 9;
   
+}
+.thumbnails strong{
+  /*color: black;
+  z-index: 10;
+  opacity: 1;*/
 }
 
 .thumbnails:hover{
