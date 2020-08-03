@@ -12,6 +12,10 @@ function closeabout(){
         $("#about_container").css("display","none");
     },800);
 }
+
+function closepage(){
+  
+}
 function showwork(){
     $("#work_container").css("display","inherit");
     $("#work_container").addClass("animated slideInRight");
