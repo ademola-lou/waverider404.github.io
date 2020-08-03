@@ -40,6 +40,13 @@ function closecontact(){
         $("#contact_container").css("display","none");
     },800);
 }
+function openTutorial(id){
+    $(id).css("display","inherit");
+    $(id).addClass("animated slideInUp");
+    setTimeout(function(){
+    $(id).removeClass("animated slideInUp");
+    },800);
+}
 setTimeout(function(){
     $("#loading").addClass("animated fadeOut");
     setTimeout(function(){
