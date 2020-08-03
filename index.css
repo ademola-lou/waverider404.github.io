@@ -420,13 +420,13 @@ body {
     color:rgb(255, 50, 50) ;
 }
 #footer #copyright{
-  background-color: black;
-/*   width: 2000px;*/
-  position: relative;
-  bottom: -50px;
-  right: 0px; 
-  background
-  text-align: center
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
 }
 #particles-js {
     position:fixed;
