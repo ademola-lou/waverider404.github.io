@@ -243,11 +243,12 @@ body {
   color: black;
   overflow: hidden;
   zoom: 1;
-  transition: 100.3s;
+  opacity: .6;
+  transition: 10.3s;
 }
 .thumbnails:hover{
   zoom: 1.2;
-  
+  opacity: 1
 }
 .thumbnails:before {
   content: " ";
