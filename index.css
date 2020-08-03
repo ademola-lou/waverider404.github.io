@@ -443,6 +443,9 @@ body {
 }
 
 @media (max-width: 800px){ 
+  body{
+    background:linear-gradient(0deg,rgba(100,10,10,0.5),rgba(50,50,50,0.5)),url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2Fred-fox_thumb.jpg?v=1596161629629") center center;
+  }
     #about {
         display:none;
     }
