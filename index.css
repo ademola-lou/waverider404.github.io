@@ -290,7 +290,7 @@ body {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:rgb(255, 250, 50);
+    background:rgb(255, 50, 50);
     color:#fff;
     z-index:9;
     position:fixed;
@@ -445,16 +445,15 @@ body {
 @media (max-width: 800px){ 
   body{
     background:linear-gradient(0deg,rgba(100,10,10,0.5),rgba(50,50,50,0.5)),url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2Fred-fox_thumb.jpg?v=1596161629629") center center;
-    
   }
     #about {
-        display:inherit;
+        display:none;
     }
     #contact {
-        display:inherit;
+        display:none;
     }
     #work {
-        display:inherit;
+        display:none;
     }
     #footer {
         text-align:center;
@@ -463,6 +462,10 @@ body {
         width:90vw;
         padding:0px 5vw;
     }
+  #middle h2{
+/*     display: none; */
+    z-index: -10;
+  }
     #middle table {
         width:80%;
     }
