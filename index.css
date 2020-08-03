@@ -419,6 +419,15 @@ body {
 #footer a {
     color:rgb(255, 50, 50) ;
 }
+#footer #copyright{
+  background-color: black;
+/*   width: 2000px;*/
+  position: relative;
+  bottom: -50px;
+  right: 0px; 
+  background
+  text-align: center
+}
 #particles-js {
     position:fixed;
     width:100vw;
