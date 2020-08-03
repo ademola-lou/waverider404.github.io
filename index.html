@@ -15,56 +15,6 @@
     <script src="app.js"></script>
 </head>
 <body>
-      <script>
-      
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'Fj9s8N1SsD8',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-        
-        setTimeout(function(){
- 
-          player.videoData.video_id = "Fj9s8N1SsD8"
-          console.log(player)
-        }, 10000)
-    </script>
-  
     <div id="loading">
         <div id="spinner"></div>
     </div>
@@ -172,12 +122,9 @@
             <h1>Camera & Lightning Tutorial</h1>
             <section>
                 <h2>Setting Camera</h2>
-              <div id="player"></div>
-              <script>
-                
-               
-             // embedvideo('player', 'Fj9s8N1SsD8')
-              </script>
+                <iframe id="players" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/Fj9s8N1SsD8?enablejsapi=1&origin=http://example.com" frameborder="0"></iframe>
+
+         
             </section>
             <section>
                 <h2>skills</h2>

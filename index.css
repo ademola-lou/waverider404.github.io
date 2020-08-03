@@ -238,12 +238,17 @@ body {
   width: 400px; 
   height: 400px;  
   z-index: 1;
-   text-align: center;
+  text-align: center;
   line-height: 400px;
   color: black;
   overflow: hidden;
+  zoom: 1;
+  transition: 100.3s;
 }
-
+.thumbnails:hover{
+  zoom: 1.2;
+  
+}
 .thumbnails:before {
   content: " ";
   position: absolute;
@@ -258,10 +263,7 @@ body {
   background-size: cover;
 }
 
-.thumbnails:hover{
-  zoom: 1.2;
-  
-}
+
 .thumbnails p{
   display: none
 }
