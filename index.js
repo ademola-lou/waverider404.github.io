@@ -55,7 +55,8 @@ function openTutorial(id){
     $(id).removeClass("animated slideInUp");
     },800);
 }
-function embedvideo(videoId){
+
+function embedvideo(id, videoId){
    var tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";

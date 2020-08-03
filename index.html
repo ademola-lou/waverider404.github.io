@@ -10,6 +10,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
     <div id="loading">
@@ -59,7 +62,7 @@
                 <div class="thumbnails" style="font-size:400px"><i class="fas fa-circle"><p>
                 Learn basic shapes e.g. Sphere, box
                 </p></i>&nbsp;Basic Shapes</div>
-                <div class="thumbnails" style="font-size:400px" onclick="openTutorial('#camera_tutorial')"><p>
+                <div class="thumbnails" style="font-size:400px" onclick="openTutorial('#camera_tutorial');"><p>
                 Learn how to set up camera and lighting
                 </p><i class="fas fa-circle"></i>&nbsp;Camera & Lighting</div>
                 <div class="thumbnails" style="font-size:400px"><p>
@@ -120,6 +123,10 @@
             <section>
                 <h2>Setting Camera</h2>
               <div id="player"></div>
+              <script>
+               
+              embedvideo('player', 'Fj9s8N1SsD8')
+              </script>
             </section>
             <section>
                 <h2>skills</h2>
@@ -137,8 +144,6 @@
 
         <div id="footer">Visit My Github<br> <a href="https://github.com/Adenekan-Ademola" target="_blank">Adenekan-Ademola</a>
         </div>
-    <script src="index.js" type="text/javascript"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+    
 </body>
 </html>
