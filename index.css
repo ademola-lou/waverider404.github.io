@@ -198,8 +198,8 @@ body {
   transform: translate(-50%, -50%);
   height: 125px;
   width: 125px;
-  
-
+  border: 2px cyan solid;
+  border-radius: 50%;
   z-index:9;
 }
 
