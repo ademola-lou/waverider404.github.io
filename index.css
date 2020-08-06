@@ -307,10 +307,9 @@ body {
 
 .thumbnails #flek{
   display: inherit;
-  
 }
 
-.thumbnails #flek:hover{
+.thumbnails:hover #flek{
   display: none;
 }
 .thumbnails p{
