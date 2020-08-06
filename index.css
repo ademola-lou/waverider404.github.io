@@ -518,6 +518,12 @@ body {
     #work {
         display:none;
     }
+    #tutorial {
+    display: none;
+    }
+  #ronnie {
+    top: 0px;
+  }
     #footer {
         text-align:center;
     }
