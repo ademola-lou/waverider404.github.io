@@ -72,6 +72,13 @@ function openTutorial(id){
     },800);
 }
 
+//https://regal-free-weight.glitch.me/#work_container
+ // console.log(document.location.href)
+  if(document.location.href.includes("camera_tutorial")){
+    console.log(document.getElementById("loading"))
+    //document.getElementById("camera_tutorial").style.display = "inherit"
+  }
+
 function embedvideo(id, videoId){
    var tag = document.createElement('script');
 
