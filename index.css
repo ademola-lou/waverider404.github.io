@@ -182,6 +182,16 @@ body {
   z-index:9;
 }
 
+#ronnie{
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  z-index:9;
+}
+
 #profile:hover {
   opacity: .7;
   cursor:pointer;
