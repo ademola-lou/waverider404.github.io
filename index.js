@@ -4,6 +4,7 @@ function showabout(){
     setTimeout(function(){
         $("#about_container").removeClass("animated slideInLeft");
     },800);
+  parent.location.hash = "about_container";
 }
 function closeabout(){
     $("#about_container").addClass("animated slideOutLeft");
@@ -19,7 +20,11 @@ function loadbookmark(){
   var bookmark = str.replace("https://regal-free-weight.glitch.me/#", "");
 
   if(document.location.href.includes(bookmark)){
+    try{
     document.getElementById(bookmark).style.display = "inherit"
+    }catch(err){
+      console.log("%cWelcome to my website", "color:blue; font-size: 30px;")
+    }
   }
 }
 function closepage(id){
@@ -35,6 +40,7 @@ function showwork(){
     setTimeout(function(){
         $("#work_container").removeClass("animated slideInRight");
     },800);
+   parent.location.hash = "work_container";
 }
 
 function showtutorial(){
@@ -43,6 +49,7 @@ function showtutorial(){
     setTimeout(function(){
         $("#tutorial_container").removeClass("animated slideInRight");
     },800);
+  parent.location.hash = "tutorial_container";
 }
 function closetutorial(){
     $("#tutorial_container").addClass("animated slideOutRight");
@@ -65,6 +72,7 @@ function showcontact(){
     setTimeout(function(){
         $("#contact_container").removeClass("animated slideInUp");
     },800);
+  parent.location.hash = "contact_container";
 }
 function closecontact(){
     $("#contact_container").addClass("animated slideOutDown");
