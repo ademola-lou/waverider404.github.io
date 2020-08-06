@@ -305,7 +305,14 @@ body {
   background-size: cover;
 }
 
+.thumbnails #flek{
+  display: inherit;
+  
+}
 
+.thumbnails #flek:hover{
+  display: none;
+}
 .thumbnails p{
   display: none
 }
