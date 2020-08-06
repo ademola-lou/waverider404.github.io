@@ -13,6 +13,15 @@ function closeabout(){
     },800);
 }
 
+function loadbookmark(){
+  
+  var str = document.location.href;
+  var bookmark = str.replace("https://regal-free-weight.glitch.me/#", "");
+
+  if(document.location.href.includes(bookmark)){
+    document.getElementById(bookmark).style.display = "inherit"
+  }
+}
 function closepage(id){
    $(id).addClass("animated slideOutLeft");
     setTimeout(function(){
@@ -74,10 +83,7 @@ function openTutorial(id){
 
 //https://regal-free-weight.glitch.me/#work_container
  // console.log(document.location.href)
-  if(document.location.href.includes("camera_tutorial")){
-    console.log(document.getElementById("loading"))
-    //document.getElementById("camera_tutorial").style.display = "inherit"
-  }
+ 
 
 function embedvideo(id, videoId){
    var tag = document.createElement('script');
@@ -126,4 +132,5 @@ setTimeout(function(){
       $("#contact").removeClass("animated fadeIn");
       $("#work").removeClass("animated fadeIn");
     },1000);
+loadbookmark()
 },1500);
