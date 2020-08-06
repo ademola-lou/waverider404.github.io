@@ -187,17 +187,17 @@ body {
   cursor:pointer;
 }
 
-#projects {
+#tutorial {
     width:10vw;
     height:10vw;
     text-align:center;
     font-size:25px;
     transform:rotate(-90deg);
-    background:rgba(50,50,250,0.9);
+    background:rgba(50,250,50,0.9);
     color:#fff;
     position:fixed;
     left:0;
-    bottom:10vh;
+    bottom:40vh;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -240,6 +240,11 @@ body {
     background:rgba(50,50, 250,0.3);
     width: 150px;
     cursor:pointer;
+}
+#tutorial:hover {
+   background:rgba(50, 250, 50,0.3);
+   width: 150px;
+   cursor:pointer;
 }
 #middle table {
     width: 10%;

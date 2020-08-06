@@ -27,6 +27,22 @@ function showwork(){
         $("#work_container").removeClass("animated slideInRight");
     },800);
 }
+
+function showtutorial(){
+    $("#tutorial_container").css("display","inherit");
+    $("#tutorial_container").addClass("animated slideInRight");
+    setTimeout(function(){
+        $("#tutorial_container").removeClass("animated slideInRight");
+    },800);
+}
+function closetutorial(){
+    $("#tutorial_container").addClass("animated slideOutRight");
+    setTimeout(function(){
+        $("#tutorial_container").removeClass("animated slideOutRight");
+        $("#tutorial_container").css("display","none");
+    },800);
+}
+
 function closework(){
     $("#work_container").addClass("animated slideOutRight");
     setTimeout(function(){
