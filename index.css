@@ -330,6 +330,7 @@ body {
   display: inherit;
 }
 
+
 .thumbnails:hover #flek{
   display: none;
 }
