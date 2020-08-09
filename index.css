@@ -540,9 +540,9 @@ body {
     #tutorial {
     display: none;
     }
-/*   #ronnie {
-    top: 0px;
-  } */
+  #ronnie {
+    zoom: .5;
+  } 
     #footer {
         text-align:center;
     }
