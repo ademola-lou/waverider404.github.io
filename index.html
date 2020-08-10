@@ -194,7 +194,8 @@ var app = document.getElementById('chatMessage');
 
 var typewriter = new Typewriter(app, {
     loop: false,
-  delay: .2
+    cursor: "🤖",
+    delay: .2
 });
 
 typewriter.pauseFor(2500)
@@ -205,6 +206,9 @@ typewriter.pauseFor(2500)
     .pauseFor(2500)
     .deleteAll()
     .typeString('you can click on me to see me jump')
+    .pauseFor(3200)
+    .deleteAll()
+    .typeString('you can also drag to rotate')
     // .deleteChars(7)
     // .typeString('<strong>altered!</strong>')
     // .pauseFor(2500)
