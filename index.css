@@ -210,7 +210,9 @@ li{
   border-radius: 50%;
   z-index:9;
 }
-
+/* .ron{
+  width: 400%
+} */
 /* Ronnie chat balloon */
 .talk-bubble {
 	margin: 40px;
