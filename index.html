@@ -189,6 +189,23 @@
 </div>
 <!--   </div> -->
 <script>
+var app = document.getElementById('chatMessage');
+
+var typewriter = new Typewriter(app, {
+    loop: false,
+  delay: .2
+});
+
+typewriter.typeString('Hello there! My name is ronnie')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('I am an interactive ai-bot in progress')
+    .pauseFor(2500)
+    .typeString('you can click on me to see me jump')
+    // .deleteChars(7)
+    // .typeString('<strong>altered!</strong>')
+    // .pauseFor(2500)
+    .start();
 
 </script>
 </body>
