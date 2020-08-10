@@ -582,9 +582,9 @@ li{
     }
   #ronnie {
   top: -20%;
-  left: -25%;
+  left: 10%;
   -ms-transform: translate(-25%, -20%);
-  transform: translate(25%, 20%); 
+  transform: translate(-10%, 20%); 
   } 
   .talk-bubble{
   zoom: .5;
