@@ -348,7 +348,7 @@ li{
   z-index: 1;
   text-align: center;
   line-height: 400px;
-  color: black;
+  color: rgba(255, 255, 255, 1);
   overflow: hidden;
   zoom: 1;
   opacity: .6;
@@ -358,7 +358,7 @@ li{
   zoom: 1.2;
   opacity: 1
 }
-.thumbnails:before {
+/* .thumbnails:before {
   content: " ";
   position: absolute;
   width: 600px; 
@@ -370,8 +370,8 @@ li{
   background: url("Toronto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-/*  */
+} */
+/* https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2Fbandicam%202020-08-06%2021-17-27-156.jpg?v=1596763061793 */
 .thumbnails #flek{
   display: inherit;
 }
