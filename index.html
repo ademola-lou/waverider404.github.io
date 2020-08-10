@@ -207,6 +207,21 @@ typewriter.typeString('Hello there! My name is ronnie')
     // .typeString('<strong>altered!</strong>')
     // .pauseFor(2500)
     .start();
+  
+
+console.logs = [];
+  
+  setTimeout(()=>{
+  console.defaultLog = console.log.bind(console);
+  console.log = function(){
+    // default &  console.log()
+    console.defaultLog.apply(console, arguments);
+    // new & array data
+    console.logs.push(Array.from(arguments));
+  }
+   // console.log(console.message)
+    console.log(console.logs)
+  }, 10000)
 
 </script>
 </body>
