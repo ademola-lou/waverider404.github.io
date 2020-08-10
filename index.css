@@ -211,6 +211,54 @@ li{
   z-index:9;
 }
 
+/* Ronnie chat balloon */
+.talk-bubble {
+	margin: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+  -ms-transform: translate(-85%, -60%);
+  transform: translate(-85%, -60%);
+	width: 200px;
+	height: auto;
+	background-color: lightblue;
+  
+}
+
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 0px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightblue lightblue transparent transparent;
+}
+.talktext{
+  padding: 1em;
+	text-align: left;
+  line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
 #profile:hover {
   opacity: .7;
   cursor:pointer;
