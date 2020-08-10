@@ -162,7 +162,6 @@ li{
     color:#fff;
     position:fixed;
     left:0;
-    
     top:10vh;
     display:flex;
     flex-direction: column;
@@ -372,7 +371,7 @@ li{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/*  */
 .thumbnails #flek{
   display: inherit;
 }
