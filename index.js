@@ -12,6 +12,7 @@ function closeabout(){
         $("#about_container").removeClass("animated slideOutLeft");
         $("#about_container").css("display","none");
     },800);
+  parent.location.hash = "home";
 }
 
 function loadbookmark(){
@@ -33,6 +34,7 @@ function closepage(id){
         $(id).removeClass("animated slideOutLeft");
         $(id).css("display","none");
     },800);
+  parent.location.hash = "home";
 }
 function showwork(){
     $("#work_container").css("display","inherit");
@@ -57,6 +59,7 @@ function closetutorial(){
         $("#tutorial_container").removeClass("animated slideOutRight");
         $("#tutorial_container").css("display","none");
     },800);
+  parent.location.hash = "home";
 }
 
 function showtutorial2(){
@@ -73,6 +76,7 @@ function closetutorial2(){
         $("#tutorial2_container").removeClass("animated slideOutRight");
         $("#tutorial2_container").css("display","none");
     },800);
+  parent.location.hash = "home";
 }
 
 function closework(){
@@ -81,6 +85,7 @@ function closework(){
         $("#work_container").removeClass("animated slideOutRight");
         $("#work_container").css("display","none");
     },800);
+  parent.location.hash = "home";
 }
 function showcontact(){
     $("#contact_container").css("display","inherit");
@@ -96,6 +101,7 @@ function closecontact(){
         $("#contact_container").removeClass("animated slideOutDown");
         $("#contact_container").css("display","none");
     },800);
+  parent.location.hash = "home";
 }
 function openTutorial(id){
     $(id).css("display","inherit");
