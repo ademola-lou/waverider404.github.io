@@ -83,7 +83,7 @@ body {
     font-size:70px;
     text-decoration:underline;
   
-    background: linear-gradient(to bottom, #eee, rgba(222,112,6,0.2), #de7006),url("Toronto.jpg");
+    background: linear-gradient(to bottom, #eee, rgba(222,112,6,0.6), #de7006),url("Toronto.jpg");
   
   background-attachment: fixed;
   -webkit-text-fill-color: transparent;
@@ -99,7 +99,7 @@ body {
     font-size:70px;
     text-decoration:underline;
   
-    background: linear-gradient(to bottom, #eee, rgba(222,112,6, .6), #de7006),url("Toronto.jpg");
+    background: linear-gradient(to bottom, black, rgba(222,112,6, .7), #de7006),url("Toronto.jpg");
   
     background-attachment: fixed;
     -webkit-text-fill-color: transparent;
@@ -618,7 +618,7 @@ li{
     #tutorial {
     display: none;
     }
-  #tutorial {
+  #tutorial2 {
     display: none;
     }
   #ronnie {
@@ -627,6 +627,12 @@ li{
   -ms-transform: translate(-25%, -20%);
   transform: translate(-10%, 20%); 
   } 
+  #middle h1 {
+    
+    font-size:35px;
+    
+  
+}
   .talk-bubble{
   zoom: .5;
   top: 70%;
