@@ -82,7 +82,7 @@ body {
     color:rgb(255, 50, 50);
     font-size:70px;
     text-decoration:underline;
-  
+    font-family: Garamond;
     background: linear-gradient(to bottom, #eee, rgba(222,112,6,0.6), #de7006),url("Toronto.jpg");
   
   background-attachment: fixed;
@@ -98,8 +98,8 @@ body {
     color:rgb(255, 50, 50);
     font-size:70px;
     text-decoration:underline;
-  
-    background: linear-gradient(to bottom, black, rgba(222,112,6, .7), #de7006),url("Toronto.jpg");
+    font-family: Garamond;
+    background: linear-gradient(to bottom, #eee, rgba(222,212,6, .5), #de7006),url("Toronto.jpg");
   
     background-attachment: fixed;
     -webkit-text-fill-color: transparent;
@@ -465,7 +465,7 @@ li{
 }
 
 
-#used div{
+.used div{
   font-family: Impact, Charcoal, sans-serif;
     font-size:30px !important;
     display:inline-block;
@@ -474,10 +474,10 @@ li{
     margin:5px 10px;
     border-radius:50px;
 }
-#used:hover {
+.used:hover {
     cursor:text;
 }
-#used div:hover {
+.used div:hover {
     cursor:text;
 }
 .container h1 {

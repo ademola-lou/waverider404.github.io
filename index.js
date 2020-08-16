@@ -59,6 +59,22 @@ function closetutorial(){
     },800);
 }
 
+function showtutorial2(){
+    $("#tutorial2_container").css("display","inherit");
+    $("#tutorial2_container").addClass("animated slideInRight");
+    setTimeout(function(){
+        $("#tutorial2_container").removeClass("animated slideInRight");
+    },800);
+  parent.location.hash = "tutorial2_container";
+}
+function closetutorial2(){
+    $("#tutorial2_container").addClass("animated slideOutRight");
+    setTimeout(function(){
+        $("#tutorial2_container").removeClass("animated slideOutRight");
+        $("#tutorial2_container").css("display","none");
+    },800);
+}
+
 function closework(){
     $("#work_container").addClass("animated slideOutRight");
     setTimeout(function(){
