@@ -88,6 +88,10 @@
                 <div class="thumbnails" style="font-size:400px"><p>
                 Learn about simple render loop
                 </p><i class="fas fa-circle"></i>&nbsp;Animation</div> -->
+               <div class="thumbnails" style="font-size:400px; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; background: url(https://cdn.glitch.com/fb76c69f-3b09-463a-a7e8-5097a5b016ef%2FzombiePrev.png?v=1621796235958);background-repeat: no-repeat;
+              background-size: cover;" onclick="displayIframeA()"><p>
+              A zombie free runner
+              </p><i class="fas fa-circle" id="zombie">Zombie Runner</i></div>
               
               <div class="thumbnails" style="font-size:400px; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; background: url(https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2Frsz_268b56b18-ecd5-43f1-aad6-453eac070643pct2fbandicampct202020-08-06pct2021-17-27-156.jpg?v=1597083936477);background-repeat: no-repeat;
               background-size: cover;" onclick="window.open('https://waverider404.github.io/flek')"><p>
@@ -95,7 +99,7 @@
               </p><i class="fas fa-circle" id="flek">Flek</i></div>
               
               <div class="thumbnails" style="font-size:400px; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; background: url(https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2Frunner.png?v=1597589675040);background-repeat: no-repeat;
-              background-size: cover;" onclick="displayIframeA()"><p>
+              background-size: cover;" onclick="window.open('https://waverider404.github.io/flek')"><p>
               Mini temple-run but grotesque
               </p><i class="fas fa-circle" id="runner">Runner</i></div>
             </div>
@@ -261,11 +265,7 @@ typewriter.pauseFor(2500)
     .start();
 
   function displayIframeA(){
-   
-    // window.open(window.location.hostname+'/test.html')
-    console.log(window.location.hostname+'/test.html')
-   // window.open('https://marshall-hunts.github.io/')
-    location.replace('/test.html')
+    location.replace('./Games/zombieRunner.html')
   }
 
 </script>
