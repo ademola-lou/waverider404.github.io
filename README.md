@@ -1,2 +1,2 @@
 # waverider404.github.io
-Github website
+Personal Github Website
