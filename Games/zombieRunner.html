@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
         <title>Zombie runner</title>
-
+        
         <!-- Babylon.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
         <script src="https://preview.babylonjs.com/ammo.js"></script>
@@ -21,6 +21,7 @@
         <script src="https://preview.babylonjs.com/gui/babylon.gui.min.js"></script>
         <script src="https://preview.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
         <script src="https://jerome.bousquie.fr/BJS/test/perlin.js"></script>
+        <div id="homebutton" style="color: orangered; position: absolute; right: 0; z-index: 10; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-decoration: underline;">Home</div>
         <style>
             html, body {
                 overflow: hidden;
@@ -47,8 +48,14 @@
         </style>
     </head>
 <body>
-    <canvas id="renderCanvas"></canvas>
+ 
+  <canvas id="renderCanvas"></canvas>
+
   <script src="./main.js"></script>
-      
+  <script>
+  document.querySelector("#homebutton").onclick = ()=>{
+    window.location = '/'
+  }
+  </script>
 </body>
 </html>
