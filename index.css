@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+    padding:0px;
+    margin:0px;
+    background:linear-gradient(0deg,rgba(100,10,10,0.5),rgba(50,50,50,0.5)),url("Toronto.jpg") center center;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background:rgb(255, 50, 50);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#spinner {
+    animation: rotate 0.56s infinite linear;
+    width:50px;
+    height:50px;
+    border:12px solid #fff;
+    border-bottom:12px solid rgb(255, 50, 50);
+    border-radius:50%;
+    margin:0;
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+#box {
+    width:100vw;
+    height:100vh;
+    z-index:9;
+    position:fixed;
+    top:0;
+}
+#box div {
+    width:16.66vw;
+    height:100%;
+    display:inline-block;
+}
+.box1 {
+    background:rgb(255, 50, 50);
+}
+.box2 {
+    background:rgb(255, 50, 50);
+    margin-left:-5px;
+}
+#menu {
+    width:100%;
+    text-align:center;
+    margin:6vh 0px;
+    display:none;
+}
+#menu a {
+    margin:0px 6%;
+    font-size:19px;
+    color:#fff;
+    text-decoration:underline;
+}
+#middle {
+    width:100vw;
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:fixed;
+    top:0;
+    text-align:center;
+    z-index:1;
+    color:#fff;
+    padding-bottom:10vh;
+}
+#middle h1 {
+    color:rgb(255, 50, 50);
+    font-size:70px;
+    text-decoration:underline;
+    font-family: Garamond;
+    background: linear-gradient(to bottom, #eee, rgba(222,112,6,0.6), #de7006),url("Toronto.jpg");
+  
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
+  /*font-size: 28vw;*/
+  font-weight: bold;
+  text-align: center;
+  
+}
+#middle h2 {
+    color:rgb(255, 50, 50);
+    font-size:70px;
+    text-decoration:underline;
+    font-family: Garamond;
+    background: linear-gradient(to bottom, #eee, rgba(222,212,6, .5), #de7006),url("Toronto.jpg");
+  
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  
+    /*font-size: 28vw;*/
+    font-weight: bold;
+    text-align: center;
+  
+}
+li{
+  font-size: 20px
+}
+
+/* #about {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    transform:rotate(-90deg);
+    background:rgba(255,250,50,0.9);/*transparent;*/
+/*     color:#fff;
+    position:fixed;
+    left:0;
+    bottom:40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:0px 0px 100px 100px;
+  
+} */
+
+#about {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    transform:rotate(90deg);
+    background:rgba(255,250,50,0.9);
+    color:#fff;
+    position:fixed;
+    right:0;
+    top:10vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:0px 0px 100px 100px;
+}
+#work {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    transform:rotate(-90deg);
+    background:rgba(255,50,50,0.9);
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:10vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:0px 0px 100px 100px;
+}
+#profile {
+  height: 125px;
+  width: 125px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  background: url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2F11BDCB30-77BB-4E68-B4C7-D824EE493617.JPG?v=1596468952090")center center;
+  background-size: 120px;
+  filter: grayscale(100%);
+  z-index:12;
+}
+
+#ronnie{
+  position: absolute;
+  top: -20%;
+  left: -25%;
+  -ms-transform: translate(-100%, -100%);
+  transform: translate(25%, 20%); 
+  height: 325px;
+  width: 325px;
+  border: 2px transparent solid;
+  border-radius: 30%;
+  z-index:9;
+}
+
+/* Ronnie chat balloon */
+.talk-bubble {
+	margin: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+  -ms-transform: translate(-85%, -60%);
+  transform: translate(-85%, -60%);
+	width: 200px;
+	height: auto;
+	background-color: lightblue;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index:9;
+}
+
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 0px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightblue lightblue transparent transparent;
+}
+.talktext{
+  padding: 1em;
+	text-align: left;
+  line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+#profile:hover {
+  opacity: .7;
+  cursor:pointer;
+}
+
+
+#tutorial2 {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    transform:rotate(-90deg);
+    background:rgba(50,250,150,0.9);
+    color:#fff;
+    position:fixed;
+    left:0;
+    bottom:40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:0px 0px 100px 100px;
+}
+#tutorial {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    transform:rotate(-90deg);
+    background:rgba(50,250,50,0.9);
+    color:#fff;
+    position:fixed;
+    left:0;
+    bottom:12vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:0px 0px 100px 100px;
+}
+#contact {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    transform:rotate(90deg);
+    background:rgba(50,50,250,0.9);
+    color:#fff;
+    position:fixed;
+    right:0;
+    bottom:40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:0px 0px 100px 100px;
+}
+
+#about:hover {
+    background:rgba(255, 250, 50,0.3);
+    width: 150px;
+    cursor:pointer;
+}
+
+#work:hover {
+    background:rgba(255,50,50,0.3);
+    width: 150px;
+    cursor:pointer;
+}
+#contact:hover {
+    background:rgba(50,50, 250,0.3);
+    width: 150px;
+    cursor:pointer;
+}
+#tutorial:hover {
+   background:rgba(50, 250, 50,0.3);
+   width: 150px;
+   cursor:pointer;
+}
+#tutorial2:hover {
+   background:rgba(50, 250, 150,0.3);
+   width: 150px;
+   cursor:pointer;
+}
+#middle table {
+    width: 10%;
+    margin:6vh auto;
+}
+#middle table tr td {
+    text-align:center;
+}
+/* .thumbnails{
+  background: linear-gradient(0deg,rgba(100,10,10,0.1),rgba(50,50,50,0.1)),url("https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2FProfiled.JPG?v=1596161194187")center center;
+  background-color: "rgba(250, 0, 0, 0.30)";
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  line-height: 400px;
+  opacity: 1;
+  overflow: hidden;
+  zoom: 1;
+  color: black;
+  z-index: 9;
+  
+}
+.transbox {
+ opacity: .4 
+} */
+
+.thumbnails {
+  position: relative;
+
+  width: 400px; 
+  height: 400px;  
+  z-index: 1;
+  text-align: center;
+  line-height: 400px;
+  color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  zoom: 1;
+  opacity: .6;
+  transition: 10.3s;
+}
+.thumbnails:hover{
+  zoom: 1.2;
+  opacity: 1
+}
+/* .thumbnails:before {
+  content: " ";
+  position: absolute;
+  width: 600px; 
+  height: 600px;  
+  left: 0;
+  top: 0;
+  opacity: .4; 
+  z-index: -1;
+  background: url("Toronto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+/* https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2Fbandicam%202020-08-06%2021-17-27-156.jpg?v=1596763061793 */
+.thumbnails #flek{
+  display: inherit;
+}
+
+
+.thumbnails:hover #flek{
+  display: none;
+}
+
+.thumbnails #runner{
+  display: inherit;
+}
+
+
+.thumbnails:hover #runner{
+  display: none;
+}
+
+.thumbnails p{
+  display: none
+}
+.thumbnails:hover p{
+  display: inherit;
+  color: white
+  
+}
+
+.social {
+    color:#fff;
+    font-size:22px;
+    border-radius:50%;
+    transition:0.4s ease-in-out;
+    margin:0px 8px;
+    text-align:center;
+}
+.social:hover { 
+    cursor: pointer;
+    color:rgb(255, 50, 50);
+}
+.container {
+    width:90vw;
+    height:90vh;
+    padding:5vh 5vw;
+    background:rgb(255, 50, 50);
+    color:#fff;
+    z-index:9;
+    position:fixed;
+    max-height:100vh;
+    overflow-y:auto;
+    display:none;
+}
+.container div {
+    font-size:25px;
+    margin:20px 0px;
+    transition:0.4s ease-in-out;
+}
+.container div:hover {
+    cursor:pointer;
+}
+.container section {
+    margin:8vh 0px;
+}
+
+
+.used div{
+  font-family: Impact, Charcoal, sans-serif;
+    font-size:30px !important;
+    display:inline-block;
+    padding:8px 10px;
+    border:2px solid #fff;
+    margin:5px 10px;
+    border-radius:50px;
+}
+.used:hover {
+    cursor:text;
+}
+.used div:hover {
+    cursor:text;
+}
+.container h1 {
+    font-size:60px;
+    text-decoration:underline;
+}
+.container p {
+    font-size:21px;
+}
+.btn_one {
+    font-size:18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#fff;
+    background:transparent;
+    border:3px solid #fff;
+    padding:8px 40px;
+    border-radius:80px;
+    font-weight:bold;
+    margin:2vh 10px;
+    transition:0.4s ease-in-out;
+}
+.btn_one:hover {
+    cursor:pointer;
+    color:rgb(255, 50, 50);
+    background:#fff;
+}
+.btn_two {
+    font-size:18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:rgb(255, 50, 50);
+    background:#fff;
+    border:3px solid #fff;
+    padding:8px 40px;
+    border-radius:80px;
+    font-weight:bold;
+    margin:2vh 10px;
+    transition:0.4s ease-in-out;
+}
+.btn_two:hover {
+    cursor:pointer;
+    padding:8px 60px;
+}
+.container form input {
+    width:46%;
+    margin:20px 1%;
+    background:transparent;
+    border:0px;
+    border-bottom:3px solid rgba(255,255,255,0.5);
+    padding:8px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    transition:0.4s ease-in-out;
+    color:#fff;
+    font-weight:bold;
+}
+.container form textarea {
+    width:96%;
+    margin:20px 1%;
+    padding:8px 10px;
+    border:0px;
+    border-bottom:3px solid rgba(255,255,255,0.5);
+    padding:8px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    background:transparent;
+    resize:none;
+    transition:0.4s ease-in-out;
+    color:#fff;
+    font-weight:bold;
+}
+.container form input:focus {
+    outline:none;
+    border-bottom:3px solid rgba(255, 255, 255,1);
+}
+.container form textarea:focus {
+    outline:none;
+    border-bottom:3px solid rgba(255, 255, 255,1);
+}
+::placeholder {
+    color:#fff;
+}
+#footer {
+    color:#fff;
+    width:92vw;
+    padding:5vh 4vw;
+    text-align:right;
+    position:fixed;
+    z-index:1;
+    bottom:0;
+    font-size:16px;
+    font-weight:bold;
+}
+#footer a {
+    color:rgb(255, 50, 50) ;
+}
+#footer #copyright{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+#particles-js {
+    position:fixed;
+    width:100vw;
+    height:100vh;
+}
+::-webkit-scrollbar {
+    width:5px;
+    height:5px;
+}
+::-webkit-scrollbar-track {
+    background: #fff; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 50, 50); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 50, 50,0.8); 
+}
+::selection {
+	color: #fff;
+	background: rgb(255, 50, 50);
+}
+
+@media (max-width: 800px){ 
+    #about {
+        display:none;
+    }
+    #contact {
+        display:none;
+    }
+    #work {
+        display:none;
+    }
+    #tutorial {
+    display: none;
+    }
+  #tutorial2 {
+    display: none;
+    }
+  #ronnie {
+  top: -20%;
+  left: 10%;
+  -ms-transform: translate(-25%, -20%);
+  transform: translate(-10%, 20%); 
+  } 
+  #middle h1 {
+    
+    font-size:35px;
+    
+  
+}
+  .talk-bubble{
+  zoom: .5;
+  top: 70%;
+  left: 85%;
+  -ms-transform: translate(-85%, -70%);
+  transform: translate(-85%, -70%);
+  }
+    #footer {
+        text-align:center;
+    }
+    #middle {
+        width:90vw;
+        padding:0px 5vw;
+    }
+  #middle h2{
+/*     display: none; */
+    font-size: 20px;
+  }
+    #middle table {
+        width:80%;
+    }
+    .container form input {
+        width:90%;
+    }
+    .container form textarea {
+        width:90%;
+    }
+    #menu {
+        display:inline-block;
+    }
+    #onlywide {
+        display:none !important;
+    }
+    .box2 {
+        margin-left:0px !important;
+    }
+    #box div {
+        width:100%;
+    }
+}
