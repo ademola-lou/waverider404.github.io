@@ -95,7 +95,7 @@
               </p><i class="fas fa-circle" id="flek">Flek</i></div>
               
               <div class="thumbnails" style="font-size:400px; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; background: url(https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2Frunner.png?v=1597589675040);background-repeat: no-repeat;
-              background-size: cover;" onclick="window.open('https://marshall-hunts.github.io/')"><p>
+              background-size: cover;" onclick="displayIframeA()"><p>
               Mini temple-run but grotesque
               </p><i class="fas fa-circle" id="runner">Runner</i></div>
             </div>
@@ -233,6 +233,7 @@
     <p id="chatMessage">Hello there I'm an interactive ai bot.</p>
   </div>
 </div>
+
 <!--   </div> -->
 <script>
 var app = document.getElementById('chatMessage');
@@ -259,6 +260,13 @@ typewriter.pauseFor(2500)
     // .pauseFor(2500)
     .start();
 
+  function displayIframeA(){
+   
+    // window.open(window.location.hostname+'/test.html')
+    console.log(window.location.hostname+'/test.html')
+   // window.open('https://marshall-hunts.github.io/')
+    location.replace('/test.html')
+  }
 
 </script>
 </body>
