@@ -88,6 +88,10 @@
                 <div class="thumbnails" style="font-size:400px"><p>
                 Learn about simple render loop
                 </p><i class="fas fa-circle"></i>&nbsp;Animation</div> -->
+               <div class="thumbnails" style="font-size:400px; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; background: url(https://cdn.glitch.com/fb76c69f-3b09-463a-a7e8-5097a5b016ef%2FzombiePrev.png?v=1621796235958);background-repeat: no-repeat;
+              background-size: cover;" onclick="displayIframeA()"><p>
+              A zombie free runner
+              </p><i class="fas fa-circle" id="zombie">Zombie Runner</i></div>
               
               <div class="thumbnails" style="font-size:400px; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; background: url(https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2Frsz_268b56b18-ecd5-43f1-aad6-453eac070643pct2fbandicampct202020-08-06pct2021-17-27-156.jpg?v=1597083936477);background-repeat: no-repeat;
               background-size: cover;" onclick="window.open('https://waverider404.github.io/flek')"><p>
@@ -95,7 +99,7 @@
               </p><i class="fas fa-circle" id="flek">Flek</i></div>
               
               <div class="thumbnails" style="font-size:400px; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; background: url(https://cdn.glitch.com/68b56b18-ecd5-43f1-aad6-453eac070643%2Frunner.png?v=1597589675040);background-repeat: no-repeat;
-              background-size: cover;" onclick="window.open('https://marshall-hunts.github.io/')"><p>
+              background-size: cover;" onclick="window.open('https://waverider404.github.io/flek')"><p>
               Mini temple-run but grotesque
               </p><i class="fas fa-circle" id="runner">Runner</i></div>
             </div>
@@ -233,33 +237,8 @@
     <p id="chatMessage">Hello there I'm an interactive ai bot.</p>
   </div>
 </div>
+
 <!--   </div> -->
-<script>
-var app = document.getElementById('chatMessage');
-
-var typewriter = new Typewriter(app, {
-    loop: false,
-    cursor: "🤖",
-    delay: .2
-});
-
-typewriter.pauseFor(2500)
-    .typeString('Hello there! My name is ronnie')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('I am an interactive ai-bot in progress')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('you can click on me to see me jump')
-    .pauseFor(3200)
-    .deleteAll()
-    .typeString('you can also drag to rotate')
-    // .deleteChars(7)
-    // .typeString('<strong>altered!</strong>')
-    // .pauseFor(2500)
-    .start();
-
-
-</script>
+<script src="main.js"></script>
 </body>
 </html>
